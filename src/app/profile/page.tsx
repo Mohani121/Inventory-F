@@ -1,9 +1,10 @@
 "use client";
 import axios from "axios";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { NextResponse } from "next/server";
 import toast from "react-hot-toast";
+
+import Sidebar from "../components/sidebar";
+import Header from "../components/header";
 
 export default function ProfilePage() {
   const router = useRouter();
@@ -19,11 +20,15 @@ export default function ProfilePage() {
   };
 
   return (
-    <div>
-      <h1>Profile page</h1>
-      <button onClick={logout} className="py-2 px-4 bg-btn1 rounded-full">
-        Logout
-      </button>
+    <div className="flex h-screen overflow-hiden ">
+      <Sidebar />
+      <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden bg-mainColor">
+        <Header />
+
+        <div className="flex justify-center items-center w-screen h-screen bg-mainColor ">
+          Profile Page
+        </div>
+      </div>
     </div>
   );
 }

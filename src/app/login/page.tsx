@@ -64,7 +64,7 @@ export default function LoginPage() {
         onClick={onSignup}
         className="p-2 mt-4 rounded-full w-48 text-mainColor bg-btn2"
       >
-        Signup Here
+        Login
       </button>
       <p className="mt-2 italic text-sm text-mainColor">
         Not Registered{" "}
