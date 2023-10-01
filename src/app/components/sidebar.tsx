@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import magan from "../../../public/assets/images/Magan.png";
+import dhaan from "../../../public/assets/images/dhaan.png";
 import Link from "next/link";
 import { BiSolidDashboard } from "react-icons/bi";
 import { FaBoxes } from "react-icons/fa";
@@ -28,40 +28,40 @@ export default function Sidebar() {
   return (
     <aside className="bg-darkClr sticky z-9999 h-screen w-24 overflow-y-hidden flex flex-col justify-between">
       <div className="mb-20">
-        <Image src={magan} alt="Invntory Logo" />
+        <Image src={dhaan} alt="Invntory Logo" />
       </div>
 
       <div className="flex flex-col justify-center items-center mb-auto">
         <div className="flex flex-col justify-center items-center mb-6 ">
           <BiSolidDashboard size={16} color="#FB8C00" />
-          <Link href="/" className="text-mainColor text-xs mt-1">
+          <Link href="/profile" className="text-mainColor text-xs mt-1">
             Dashboard
           </Link>
         </div>
 
         <div className="flex flex-col justify-center items-center mb-6">
           <FaBoxes size={16} color="#FB8C00" />
-          <Link href="/" className="text-mainColor text-xs mt-1">
+          <Link href="/products" className="text-mainColor text-xs mt-1">
             Products
           </Link>
         </div>
 
         <div className="flex flex-col justify-center items-center mb-6">
           <ImLocation2 size={16} color="#FB8C00" />
-          <Link href="/" className="text-mainColor text-xs mt-1">
+          <Link href="/location" className="text-mainColor text-xs mt-1">
             Locations
           </Link>
         </div>
 
         <div className="flex flex-col justify-center items-center mb-6">
           <HiTruck size={16} color="#FB8C00" />
-          <Link href="/" className="text-mainColor text-xs mt-1">
+          <Link href="/suppliers" className="text-mainColor text-xs mt-1">
             Suppliers
           </Link>
         </div>
         <div className="flex flex-col justify-center items-center mb-6">
           <TbChecklist size={18} color="#FB8C00" />
-          <Link href="/" className="text-mainColor text-xs mt-1">
+          <Link href="/orders" className="text-mainColor text-xs mt-1">
             Orders
           </Link>
         </div>
@@ -69,7 +69,7 @@ export default function Sidebar() {
 
       <div className="flex flex-col justify-center items-center mb-8">
         <Link
-          href="/setting"
+          href="/mysetting"
           className=" flex flex-col justify-center items-center text-mainColor text-xs"
         >
           <IoMdSettings size={16} color="#FB8C00" />

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import toast from "react-hot-toast";
-import profile from "../../../public/assets/images/profile.jpg";
+import dhaan from "../../../public/assets/images/dhaan.png";
 import { FaSignOutAlt } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 
@@ -36,7 +36,7 @@ export default function Header() {
       <div className="flex justify-between items-center">
         <div className="mx-4 flex justify-center items-center">
           <Image
-            src={profile}
+            src={dhaan}
             width={30}
             height={30}
             alt="user profile picture"
